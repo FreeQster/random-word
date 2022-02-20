@@ -33,5 +33,9 @@ while j < int(length):
     output = ''.join((output, words[rnd]))
     j = j+1
 
+#Remove last char from var output
+l = len(output)
+output = output[:l-1]
+
 #Output without line breaks
 print(output.replace('\n', '-'))
