@@ -24,7 +24,8 @@ with open(scd+'/src/de-2048-v1.txt') as my_file:
 #Ask for number of words input
 length = input("How many words do we want? (Number)  ")
 
-output = ""
+#Prefix
+output = "1$"
 
 #Roll words and add to var output
 while j < int(length):
@@ -33,4 +34,4 @@ while j < int(length):
     j = j+1
 
 #Output without line breaks
-print(output.replace('\n', ' '))
+print(output.replace('\n', '-'))
