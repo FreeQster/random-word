@@ -37,5 +37,8 @@ while j < int(length):
 l = len(output)
 output = output[:l-1]
 
+#Capitalize last letter
+output = output[:-1] + output[-1].upper()
+
 #Output without line breaks
 print(output.replace('\n', '-'))
